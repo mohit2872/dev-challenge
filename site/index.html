@@ -1,0 +1,67 @@
+<html>
+<head>
+    <!--
+    This is the library that provides websocket streaming pub/sub
+    The dev serverver is serving the html and javascript, but it also provides updating fx data on /fx/prices.
+     -->
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+</head>
+<body>
+
+<section class="content">
+
+    <h1>Updating Table</h1>
+
+    <h2>Notes</h2>
+
+    <p>
+        Some points to consider :-
+    </p>
+
+    <ul>
+        <li><strong>Anything you had to change or assume about this task to make your solution: </strong> I didn't change or assume anything outside the scope of requirements. 
+            Though I have added a test framework called Jest.
+        </li>
+        <li><strong>A high level description of your approach:</strong> According to the requirements mentioned I divided task into three subtasks: 
+            Drawing the table, drawing the sparklines and testing.
+        </li>
+        <li><strong>If you added any other development-time steps, what they are, why you added them and how to run them:</strong> I haven't added any development time steps</li>
+        <li><strong>Which libraries/frameworks you would have liked to have used (if any), and how they would have made
+            the result better:</strong> I would have loved to use some front end framework like React( although it is a UI library). They would have made the code more modular.</li>
+        <li><strong>You should include your name and email address so if we have trouble running it we can get in
+            touch with you easily</strong>: Name is <strong>Mohit Gupta</strong> and email is <a href="mailto:mg909@snu.edu.in">mg909@snu.edu.in</a></li>
+        <li>
+            <strong>TESTING: </strong>Kindly run <strong>npm test</strong> for testing.
+        </li>
+        <li>
+            <strong>Node version: </strong> v10.16.0
+        </li>
+    </ul>
+
+
+    <br>
+    <h2>Task</h2>
+
+    <div id="currency-data">
+        
+    </div>
+    <section id="stomp-status">
+        It hasn't yet connected to the stomp server.  If this state persists for a significant length of time, check
+        <ul>
+            <li>that you are running a browser that supports javascript and WebSockets</li>
+            <li>that you have run the development server by going into the db-updating-table directory and
+                run it by running <code>npm start</code></li>
+            <li>that there were no errors during the development server starting (e.g. perhaps port
+                8011 was taken)</li>
+            <li>that you are accessing it through that dev server, at <a href="http://localhost:8011">http://localhost:8011</a>
+                and that no errors are appearing in your browsers console.</li>
+        </ul>
+        If none of that works, then ask for help by emailing <a href="mailto:prakhar.singh@db.com">prakhar.singh@db.com</a>.
+    </section>
+
+    
+<script src="bundle.js"></script>
+
+</body>
+</html>
